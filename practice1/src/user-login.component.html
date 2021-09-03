@@ -1,0 +1,13 @@
+<form #userForm='ngForm' (ngSubmit)=postData(userForm.value)>
+    <div>
+        <label> Email </label>
+        <input name="email" type="email" #email="ngModel" ngModel required/>
+    </div>
+    <div>
+        <label> Password </label>
+        <input  name="password" #password="ngModel" type="password"  ngModel required/>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+
